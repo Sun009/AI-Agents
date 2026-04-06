@@ -2,9 +2,9 @@
 
 Welcome! This is a **simple, working example** of an AI agent - think of it as a "Hello World" program for AI.
 
-## 🎯 What is This?
+## 🎯 What is an AI Agent?
 
-An **AI Agent** is a program that:
+It is a program that:
 - Listens to what you ask
 - Decides what action to take
 - Uses tools to get answers
