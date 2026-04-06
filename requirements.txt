@@ -7,3 +7,4 @@ langgraph>=0.3.0
 duckduckgo-search>=7.0.0
 numexpr>=2.9.0
 ddgs>=9.13.0
+numexpr>=2.14.1
