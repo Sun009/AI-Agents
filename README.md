@@ -87,6 +87,20 @@ Shows: Friday, April 04, 2026 at 03:45 PM
 - Shows day of week
 - **Try:** "What time is it?", "Today's date"
 
+# 🧠 How AI Agents Decide Which Tool to Use
+
+An agent evaluates three things when picking a tool:
+
+| Component | What It Is | Why It Matters |
+|---|---|---|
+| **Tool Name** | Identifier (e.g., `search_web`) | First signal, gives a hint about purpose |
+| **Description (Docstring)** | What the tool does & when to use it | Most important, agent relies on this most heavily |
+| **Parameters** | Input the tool needs (e.g., `query: str`) | Confirms if the tool fits the current context |
+
+> 💡 **Key insight:** The description is the most critical component.
+> A poorly written docstring = agent picks the wrong tool, even if the tool itself is perfect.
+
+
 ## 🧠 How It Works (Behind the Scenes)
 
 ```
@@ -98,7 +112,7 @@ Shows: Friday, April 04, 2026 at 03:45 PM
                ▼
 ┌─────────────────────────────────────────────┐
 │  AI AGENT READS YOUR QUESTION               │
-│  (Uses Llama AI model)                      │
+│  (Uses LLM)                                 │
 └──────────────┬──────────────────────────────┘
                │
                ▼
