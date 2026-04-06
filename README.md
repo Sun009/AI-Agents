@@ -199,15 +199,7 @@ Modify line 72 to make agent behave differently:
 prompt="You are a sarcastic AI assistant. Use tools when needed."
 ```
 
-### Exercise 3: Add Emoji to Tools
-See the 🔧 icon? Try adding more:
-```python
-web_search_tool = "🌍 Search the web"
-calculator_tool = "🧮 Do math"
-datetime_tool = "🕐 Check time"
-```
-
-### Exercise 4: Experiment with Queries
+### Exercise 3: Experiment with Queries
 Try these to see tool selection in action:
 - ❌ "What is 2+2?" → Agent uses calculator
 - ✅ "Search Google for AI news" → Agent uses web search
@@ -230,10 +222,6 @@ Try these to see tool selection in action:
 - Use parentheses for complex formulas: `(10 + 5) * 2`
 - Avoid unsafe characters
 
-### App not opening?
-- Make sure port 8501 is free
-- Try: `streamlit run single_agent_with_tools.py --server.port=8502`
-
 ## 📦 What's Installed
 
 | Package | Purpose |
@@ -246,12 +234,6 @@ Try these to see tool selection in action:
 | `streamlit` | Web interface |
 
 ## 🔐 Security Notes
-
-✅ **Safe:**
-- Uses `numexpr` for math (not `eval()`)
-- No database connections
-- No file access
-- No external code execution
 
 ⚠️ **Keep Safe:**
 - Never share your `.env` file
@@ -269,9 +251,6 @@ After running this, you can:
 5. **Add persistence** - Save conversations to a database
 
 ## 🤔 Common Questions
-
-**Q: Why does the agent sometimes not use a tool?**
-A: If the agent can answer from training data (like "What is 2+2?"), it doesn't need tools. That's efficient!
 
 **Q: Can I add more tools?**
 A: Yes! Just create a function with `@tool` decorator and add it to the `tools` list.
@@ -329,5 +308,5 @@ You now have a working AI agent. This is a real, functional intelligent system -
 
 ---
 
-**Questions? Issues?** Check the code comments or try the examples above. Happy learning! 🚀
+**Questions? Issues?** Feel free to connect! Happy learning! 🚀
 
