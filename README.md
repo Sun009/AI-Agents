@@ -17,7 +17,6 @@ Imagine a helpful assistant that doesn't just answer from memory - it can *searc
 ### 1. **Install Requirements**
 ```bash
 pip install -r requirements.txt
-pip install numexpr
 ```
 
 ### 2. **Set Up Your API Key**
